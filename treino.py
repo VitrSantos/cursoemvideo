@@ -15,4 +15,4 @@ while mostrar != 0:
     mostrar = int(input('Quantos termos você quer mostrar? '))
     mais = mais + mostrar
 print('Progressão finlizada com {} termos mostrados'.format(mais))
-
+print('=' * 50)
