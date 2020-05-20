@@ -1,0 +1,6 @@
+n = input('Digite um número de 0 a 9999: ')
+print('O número que você digitou foi {}'.format(n))
+print('O algarismo dos milhares é {}'.format(n[0]))
+print('O algarismo das centenas é {}'.format(n[1]))
+print('O algarismo das dezenas é {}'.format(n[2]))
+print('O algarismo das unidades é {}'.format(n[3]))
