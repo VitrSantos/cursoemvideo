@@ -1,4 +1,4 @@
-Exercício Python #066 - Vários números com flag
+#Exercício Python #066 - Vários números com flag
 cont = soma = 0
 while True:
     num = int(input('Digite um número [999 para parar]: '))
