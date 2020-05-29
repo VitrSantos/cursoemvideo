@@ -1,0 +1,12 @@
+#Exercício Python #073 - Tuplas com Times de Futebol
+times = ('Flamengo', 'Santos', 'Palmeiras', 'Grêmio', 'Athletico-PR', 'São Paulo', 'Internacional', 'Corinthians', 'Fortaleza', 'Goiás', 'Bahia', 'Vasco da Gama', 'Atlético-MG', 'Fluminense', 'Botafogo', 'Ceará SC', 'Cruzeiro', 'CSA', 'Chapecoense', 'Avaí')
+print('='*40)
+print('Times do brasileirão:', times)
+print('='*40)
+print('Os 5 primeiros times são:',times[0:5])
+print('='*40)
+print('Os 4 últimos são:', times[16:] )
+print('='*40)
+print('Times em ordem alfabética:',sorted(times))
+print('='*40)
+print(f'O time {times[18]} está na {times.index("Chapecoense")+1}ª posição.')
