@@ -24,5 +24,5 @@ for p in galera:
         menorp = p[1]
         pessoamen = p[0]
     cont += 1
-print(f'O maior peso foi de {pessoamai} que pesa {maiorp} ')
-print(f'O menor peso foi de {pessoamen} que pesa {menorp}')
+print(f'O maior peso foi de {pessoamai} que pesa {maiorp}.')
+print(f'O menor peso foi de {pessoamen} que pesa {menorp}.')
