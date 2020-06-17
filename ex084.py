@@ -18,6 +18,8 @@ for p in lista:
         maiorpeso = p[1]
     if menorpeso > p[1]:
         menorpeso = p[1]
+print('=-' * 30)
+print(f'A quantidade de pessoas inseridas foram {len(lista)}.')
 print(f'O maior peso foi {maiorpeso}. Peso de', end=' ')
 for p in lista:
     if p[1] == maiorpeso:
