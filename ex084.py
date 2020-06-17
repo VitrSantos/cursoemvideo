@@ -1,28 +1,29 @@
 #Exercício Python #084 - Lista composta e análise de dados
-resp = 's'
+pessoa = []
 lista = []
-galera = []
-maiorp = menorp = cont = 0
-pessoamen = pessoamai = ''
-while resp in 'sS':
-    nome = str(input('Nome: '))
-    peso = int(input('Peso: '))
-    lista.append(nome)
-    lista.append(peso)
-    galera.append(lista[:])
-    lista.clear()
-    resp = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+maiorpeso = menorpeso = 0
+while True:
+    pessoa.append(str(input('Nome: ')))
+    pessoa.append(float(input('Peso: ')))
+    for p in lista:
+        if len( lista ) == 1:
+            menorpeso = maiorpeso = p[1]
+    lista.append(pessoa[:])
+    pessoa.clear()
+    resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if resp == 'N':
         break
-for p in galera:
-    if cont == 0:
-        maiorp = menorp = p[1]
-    if p[1] >= maiorp:
-        maiorp = p[1]
-        pessoamai = p[0]
-    if p[1] <= menorp:
-        menorp = p[1]
-        pessoamen = p[0]
-    cont += 1
-print(f'O maior peso foi de {pessoamai} que pesa {maiorp}.')
-print(f'O menor peso foi de {pessoamen} que pesa {menorp}.')
+for p in lista:
+    if maiorpeso < p[1]:
+        maiorpeso = p[1]
+    if menorpeso > p[1]:
+        menorpeso = p[1]
+print(f'O maior peso foi {maiorpeso}. Peso de', end=' ')
+for p in lista:
+    if p[1] == maiorpeso:
+        print([p[0]], end=' ')
+print()
+print(f'O menor peso foi {menorpeso}. Peso de', end=' ')
+for p in lista:
+    if p[1] == menorpeso:
+        print([p[0]], end=' ')
