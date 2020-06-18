@@ -1,5 +1,0 @@
-n = int(input("Digite um número: "))
-print('O dobro desse número é', n * 2)
-print('O triplo desse número é', n * 3)
-print ('Esse número elevado ao quadrado é', n * n)
-print('A raiz quadrada desse número é', n ** (1/2))
