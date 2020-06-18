@@ -1,4 +1,5 @@
 #Exercício Python 4: Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele.
+
 elemento = ('Digite algo: ')
 print(f'O tipo primitivo desse valor é {type(elemento)}')
 print(f'Só tem espaços? {elemento.isspace()}')
