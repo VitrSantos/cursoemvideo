@@ -1,2 +1,3 @@
-s = float(input('Qual é salário do funcionário? '))
-print('O salário do funcionário é de', s,'. Sendo assim, com \033[4;35m 15%\033[m de aumento, ele receberá \033[1;36m{:.2f}\033[m'.format(s * 1.15))
+#Exercício Python 13: Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+sal = float(input('Salário atual: R$ '))
+print(f'Com o reajuste salarial de 15%, um funcionario que ganhava {sal:.2f} passará a ganhar R$ {sal * 1.15:.2f}.')
