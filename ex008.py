@@ -1,11 +1,9 @@
-mi = float(input('Coloque sua medida em metros: '))
-print('A medida em', mi, 'm, corresponde a: ')
-print('Em quilômetros: {} Km' .format(mi / 1000))
-print('Em hectômetros: {} hm' .format(mi / 100))
-print('Em decâmetros: {} dam' .format(mi / 10))
-print('Em decímetros {} dm'.format(mi * 10))
-print('Em centrimetros: {} cm' .format(mi *100))
-print('Em milímetros: {} mm' .format(mi * 1000))
-
-
-
+#Exercício Python 8: Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+metros = float(input('Digite um valor em metros: '))
+print(f'Os {metros} metros digitados correspondem a:')
+print(f'{metros * 0.001} Km')
+print(f'{metros * 0.01} hm')
+print(f'{metros * 0.1} dam')
+print(f'{metros * 10} dm')
+print(f'{metros * 100} cm')
+print(f'{metros * 1000} mm')
