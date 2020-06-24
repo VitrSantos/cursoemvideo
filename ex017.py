@@ -1,7 +1,6 @@
+#Exercício Python 17: Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo. Calcule e mostre o comprimento da hipotenusa.
+import math
 co = float(input('Digite o cateto oposto do triângulo retângulo: '))
 ca = float(input('Digite o cateto adjacente do trângulo retângulo: '))
-from math import sqrt
-from math import pow
-s = pow(co, 2) + pow(ca, 2)
-print('A hipotenusa dos catetos acima é igual a {:.3f}'.format(sqrt(s)))
+print(f'A hipotenusa dos catetos acima é {math.hypot(co,ca) :.0f}')
 
