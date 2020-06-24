@@ -2,5 +2,5 @@
 from math import hypot
 co = float(input('Digite o cateto oposto do triângulo retângulo: '))
 ca = float(input('Digite o cateto adjacente do trângulo retângulo: '))
-print(f'A hipotenusa dos catetos acima é {hypot(co,ca) :.0f}')
+print(f"A hipotenusa dos catetos acima é {hypot(co,ca) :.0f}")
 
