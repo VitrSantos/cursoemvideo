@@ -6,3 +6,4 @@ print(f'O Seno do angulo é {sin(ran):.2f}.')
 print(f'O Cosseno do angulo é {cos(ran):.2f}')
 print(f'A tangente do ângulo é {tan(ran):.2f}')
 
+
