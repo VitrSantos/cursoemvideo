@@ -1,9 +1,10 @@
-n = float(input('Digite um número qualquer: '))
-r = n % 2
-if r == 0:
-    print('O número {} é par'.format(n))
+#Exercício Python 30: Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
+num = int(input('Me diga um número qualquer: '))
+resto = num % 2
+print('O número digitado é',end=' ')
+if resto == 0:
+    print('PAR')
 else:
-    print('O número {} é impar'.format(n))
-
+    print('ÍMPAR')
 
 
