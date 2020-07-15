@@ -7,4 +7,3 @@ else:
     tarifa = 0.45
 print(f'Você está prestes a fazer uma viagem de {distância}\n'
       f'E o valor da sua passagem será de R$ {(distância * tarifa):.2f}')
-
