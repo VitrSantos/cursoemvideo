@@ -1,10 +1,12 @@
-casa = float(input('Qual é o valor da casa? R$ '))
-salario = float(input('Qual o salário do comprador? R$ '))
-tempo = int(input('Em quantos anos a casa será paga? '))
-t = tempo * 12
-parcela = casa / t
-condição = 0.3 * salario
-if parcela <= condição:
-    print('O valor da parcela será de R${:.2f} por mês em {} anos. Seu emprestimo será \033[4;32mCONCEDIDO'.format(parcela, tempo))
+#Exercício Python 36: Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. Pergunte o valor da casa, o salário do comprador e em quantos anos ele vai pagar. A prestação mensal não pode exceder 30% do salário ou então o empréstimo será negado.
+casa = int(input('Qual é o valor da casa? '))
+salario = float(input("Quanto você ganha? "))
+tempo = int(input('Quantos anos de financiamento? '))
+prestaçoes = casa / (tempo * 12)
+print('-'*40)
+print(f'Para financiar uma casa de R$ {casa} por {tempo} anos, a parcela será de {prestaçoes:.2f}')
+if prestaçoes <= salario * 0.3:
+    print('O empréstimo será CONCEDIDO!')
 else:
-    print('O valor da parcela será de R${:.2f} por mês em {} anos. Seu empréstimo será \033[4;31mNEGADO'.format(parcela, tempo))
+    print('O empréstimo será NEGADO!')
+
